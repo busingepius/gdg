@@ -1,0 +1,20 @@
+{
+  "name": "Docker in Docker",
+  "build": {
+    "dockerfile": "DockerFile",
+    "context": "."
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} },
+  "postCreateCommand": "docker --version",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "dart-code.flutter",
+        "dart-code.dart-code",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
